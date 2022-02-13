@@ -1,6 +1,7 @@
 const express = require ('express')
 const req = require('express/lib/request')
 const fs = require("fs")
+const { Timestamp } = require('bson')
 
 const server = express()
 
@@ -27,6 +28,18 @@ server.get('/airports', function(req, res) {
         res.send(JSON.stringify(airport))
     })
 
+})
+
+server.get('/flights', function(req, res) {
+    const fromIata =  req.query.from
+    const toIata = req.query.to
+    const atTimestamp = Number(req.query.at)
+
+    fs.readFile("./data/flights.json", 'utf8', function(err, data)  {
+        const flights = JSON.parse(data)
+        const flight = flights.filter((flight) => flight.departureAirportIata === fromIata & flight.arrivalAirportIata === toIata & flight.departsAt >= atTimestamp)
+        res.send(JSON.stringify(flight))
+    })
 })
 
 server.listen(3000, function () {

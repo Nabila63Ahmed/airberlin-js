@@ -1,0 +1,15 @@
+[
+    {
+      "_id": "eb6fdca4-0afe-4dd1-9418-5f262fd32c03",
+      "aircraftTailNumber": "D-1000",
+      "departureAirportIata": "LHR",
+      "arrivalAirportIata": "FRA",
+      "departsAt": 1630007992108
+    },{
+        "_id": "eb6fdca4-0afe-4aa3-2955-5f262fd32c03",
+        "aircraftTailNumber": "D-1100",
+        "departureAirportIata": "FRA",
+        "arrivalAirportIata": "CAI",
+        "departsAt": 1840007992108
+    }
+  ]
