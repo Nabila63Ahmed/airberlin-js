@@ -1,0 +1,23 @@
+[
+    {
+        "tailNumber": "D-1000",
+        "model": "Airbus A330-300",
+        "seating": {}
+    },
+    {
+        "tailNumber": "D-1200",
+        "model": "Airbus A300-300",
+        "seating": {}
+    },
+    {
+        "tailNumber": "D-1001",
+        "model": "Airbus A330-300",
+        "seating": {}
+    },
+    {
+        "tailNumber": "D-1020",
+        "model": "Airbus A300-300",
+        "seating": {}
+    }
+
+]
